@@ -1,0 +1,6 @@
+<mj-section padding-bottom="0px" background-color="#F2F2FC" border-radius="20px 20px 0 0" border-top="5px iset #3B7DB6">
+    <mj-column width="100%">
+        <mj-text font-size="30px" align="center"><strong>Vital</strong>Gym</mj-text>
+        <mj-divider padding-top="20" padding-bottom="0px" padding-left="0px" padding-right="0px" border-width="1px" border-color="#f8f8f8"></mj-divider>
+    </mj-column>
+</mj-section>

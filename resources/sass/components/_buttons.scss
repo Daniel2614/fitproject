@@ -1,0 +1,10 @@
+.vg-button {
+    @apply .tw-inline-flex .tw-text-xs .tw-py-3 .tw-px-4 .tw-text-white .tw-rounded .tw-font-bold .tw-uppercase;
+    &:hover {
+        color: config('colors.white');
+    }
+    .fa,
+    .glyphicon{
+        @apply .tw-mr-1;
+    }
+}

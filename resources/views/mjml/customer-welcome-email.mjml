@@ -1,0 +1,37 @@
+<mjml>
+    <mj-body background-color="#e5e5e9">
+        <mj-raw>
+            <!-- Header -->
+        </mj-raw>
+        <mj-section padding-bottom="0px" background-color="#F2F2FC" border-radius="20px 20px 0 0" border-top="5px iset #3B7DB6">
+            <mj-column width="100%">
+                <mj-text font-size="30px" align="center"><strong>Vital</strong>Gym</mj-text>
+                <mj-divider padding-top="20" padding-bottom="0px" padding-left="0px" padding-right="0px" border-width="1px" border-color="#f8f8f8"></mj-divider>
+            </mj-column>
+        </mj-section>
+
+        <mj-section padding-bottom="0px" background-color="#fcfcfc">
+            <mj-column width="100%">
+                <mj-text align="center" font-size="24px" color="#557CB3" font-family="Arial" font-weight="bold">¡Bienvenido a VitalGym!</mj-text>
+                <mj-text align="center" font-size="20px" font-family="Arial" font-weight="bold">{{ $customer->full_name }}</mj-text>
+                <mj-divider padding-top="20" padding-bottom="0px" padding-left="0px" padding-right="0px" border-width="1px" border-color="#f8f8f8"></mj-divider>
+            </mj-column>
+        </mj-section>
+
+        <mj-section background-color="white">
+            <mj-column width="100%">
+                <mj-text align="left" font-size="20px" color="grey">Por favor verifica tu email para activar tu cuenta.</mj-text>
+                <mj-button href="{{ route('auth.activate.account', $customer->user->token) }}" font-family="Arial" background-color="#3B7DB6" color="white">Activar cuenta</mj-button>
+                <mj-text align="left" color="grey">Si esta teniendo algún problema con el botón, copie y pegue la siguiente url en su navegador web <br>
+                    <a href="{{ route('auth.activate.account', $customer->user->token) }}">{{ route('auth.activate.account', $customer->user->token) }}</a>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+
+        <mj-section background-color="#F2F2FC" border-radius="0 0 20px 20px">
+            <mj-column>
+                <mj-text align="center" color="#557CB3">&copy; {{ date('Y') }} Vital Gym Todos los derechos reservado</mj-text>
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>

@@ -1,0 +1,33 @@
+.vg-login {
+    @apply .tw-max-w-sm;
+    @screen md {
+        @apply .tw-min-w-sm;
+    }
+    &__content {
+        @apply .tw-bg-white .tw-pt-10 .tw-pb-8 .tw-px-8 .tw-shadow-md .tw-rounded-lg .tw-overflow-hidden;
+    }
+
+    .form {
+        &-control {
+            @apply .tw-border-grey-light .tw-h-auto .tw-p-3;
+            box-shadow: none;
+            &-feedback {
+                top: 50%;
+                @apply .tw-text-grey-darker;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    .btn {
+        @apply  .tw-px-4 .tw-border-none .tw-text-base .tw-rounded .tw-font-bold .tw-py-3;
+    }
+
+    .btn-primary {
+        @apply .tw-bg-blue;
+        transition: all .3s;
+        &:hover {
+            @apply .tw-bg-blue-dark;
+        }
+    }
+}

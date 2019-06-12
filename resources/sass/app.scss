@@ -1,0 +1,25 @@
+/*
+    ============================================================================
+        APP SCSS
+    ============================================================================
+ */
+@tailwind preflight;
+
+@tailwind components;
+
+//Plugins
+@import "plugins/pace";
+@import "plugins/toastr";
+
+//Base
+@import "base/site";
+
+//Components
+@import "components/loader";
+@import "components/tables";
+@import "components/buttons";
+@import "components/forms";
+@import "components/login";
+
+@tailwind utilities;
+

@@ -1,0 +1,40 @@
+<mjml>
+    <mj-body background-color="#e5e5e9" margin="50px">
+        <mj-section padding-bottom="0px" background-color="#F2F2FC" border-radius="20px 20px 0 0" border-top="5px iset #3B7DB6">
+            <mj-column width="100%">
+                <mj-text font-size="30px" align="center"><strong>Vital</strong>Gym</mj-text>
+                <mj-divider padding-top="20" padding-bottom="0px" padding-left="0px" padding-right="0px" border-width="1px" border-color="#f8f8f8"></mj-divider>
+            </mj-column>
+        </mj-section>
+
+        <mj-section padding-bottom="0px" background-color="#fcfcfc">
+            <mj-column width="100%">
+                <mj-text align="center" font-size="24px" color="#557CB3" font-family="Arial" font-weight="bold">Resumen de Membresía
+                </mj-text>
+                <mj-divider padding-top="20" padding-bottom="0px" padding-left="0px" padding-right="0px" border-width="1px" border-color="#f8f8f8"></mj-divider>
+            </mj-column>
+        </mj-section>
+
+        <mj-section background-color="white" padding="30px">
+            <mj-column width="100%">
+                <mj-text align="left" font-size="16px" color="grey">
+                    Los datos de tu membresía son los siguientes:
+                    <ul>
+                        <li><strong>Cliente:</strong> {{ $membership->customer->full_name }} </li>
+                        <li><strong>Membresía:</strong> {{ $membership->plan->name }} </li>
+                        <li><strong>Precio Unitario:</strong> {{ $membership->plan->price_in_dollars }} </li>
+                        <li><strong>Precio total:</strong> {{ $membership->payment->total_price_in_dollars }} </li>
+                        <li><strong>Fecha Inicio:</strong> {{ $membership->date_start->format('d-m-Y') }} </li>
+                        <li><strong>Fecha de Caducidad:</strong> {{ $membership->date_end->format('d-m-Y') }} </li>
+                    </ul>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+
+        <mj-section background-color="#F2F2FC" border-radius="0 0 20px 20px">
+            <mj-column>
+                <mj-text align="center" color="#557CB3">&copy; {{ date('Y') }} Vital Gym Todos los derechos reservado</mj-text>
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>

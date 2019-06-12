@@ -1,0 +1,5 @@
+<mj-section background-color="#F2F2FC" border-radius="0 0 20px 20px">
+    <mj-column>
+        <mj-text align="center" color="#557CB3">&copy; {{ date('Y') }} Vital Gym Todos los derechos reservado</mj-text>
+    </mj-column>
+</mj-section>

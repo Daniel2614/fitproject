@@ -1,0 +1,38 @@
+<mjml>
+    <mj-body>
+        <mj-container background-color="#e5e5e9">
+
+            <!-- Header -->
+            <mj-include path="./../layout/header" />
+
+            <!-- Intro -->
+            <mj-section padding-bottom="0" background-color="#fcfcfc">
+                <mj-column width="100%">
+                    <mj-text align="center" font-size="20" color="#557CB3" font-family="Arial" font-weight="bold">
+                        Hola!
+                    </mj-text>
+                    <mj-divider padding-top="20" padding-bottom="0" padding-left="0" padding-right="0" border-width="1px" border-color="#f8f8f8" />
+                </mj-column>
+            </mj-section>
+
+            <!-- Article -->
+            <mj-section background-color="white">
+                <mj-column width="100%">
+                    <mj-text align="left" font-size="20" color="grey">
+                        Por favor verifica tu email para activar tu cuenta.
+                    </mj-text>
+                    <mj-button href="{{ route('auth.activate.account', $token) }}" font-family="Arial" background-color="#3B7DB6" color="white">
+                        Activar cuenta
+                    </mj-button>
+                    <mj-text align="left" color="grey">
+                         Si esta teniendo algún problema con el botón,  copie y pegue la siguiente url en su navegador web <br>
+                        <a href="{{ route('auth.activate.account', $token) }}">{{ route('auth.activate.account', $token) }}</a>
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+
+            <!-- Footer -->
+            <mj-include path="./../layout/footer" />
+        </mj-container>
+  </mj-body>
+</mjml>
