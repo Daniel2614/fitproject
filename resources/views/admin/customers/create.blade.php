@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('contentheader_title')
-    Nuveo cliente
+  <i class="fas fa-plus"></i> Nuevo cliente
 @endsection
 
 @push('styles')

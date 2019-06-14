@@ -27,7 +27,8 @@
                             <span>Membresías</span>
                         </div>
                         <div class="icon">
-                            <i class="fa fa-users"></i>
+                            <!-- <i class="fa fa-users"></i> -->
+                            <i class="fa fa-address-card"></i>
                         </div>
                         <a href="{{ route('admin.memberships.index') }}" class="small-box-footer">Más info <i class="fa fa-arrow-circle-right"></i></a>
                     </div>

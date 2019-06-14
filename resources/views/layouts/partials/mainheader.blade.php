@@ -1,3 +1,9 @@
+<style>
+    #bar-nav:hover {
+      color: #ffffff;
+      background: #FF6C00;
+    }
+</style>
 <!-- Main Header -->
 <header class="main-header">
 
@@ -12,9 +18,14 @@
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
         <!-- Sidebar toggle button-->
-        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <!-- <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <i class="fas fa-bars"></i>
             <span class="sr-only">{{ trans('adminlte_lang::message.togglenav') }}</span>
+        </a> -->
+        <a href="" id="bar-nav">
+            <i class="fas fa-bars" data-toggle="offcanvas" style="color: #000000; font-size: 1.2rem; margin-top: 15px; margin-left: 15px;"></i>
         </a>
+        
         <!-- Navbar Right Menu -->
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
@@ -71,3 +82,13 @@
         </div>
     </nav>
 </header>
+
+<script>
+    jQuery(document).ready(function($) {
+        $("#bar-nav").hover(function() {
+           $(".fa-bars").attr('style', 'color: #ffffff; font-size: 1.2rem; margin-top: 15px; margin-left: 15px;');
+        }, function() {
+           $(".fa-bars").attr('style', 'color: #000000; font-size: 1.2rem; margin-top: 15px; margin-left: 15px;');
+        });
+    });
+</script>

@@ -12,13 +12,14 @@
 }
 .skin-black .main-header .navbar-brand {
   color: #333;
-  border-right: 1px solid #eee;
+  border-right: 1px solid #FF6C00;
 }
 .skin-black .main-header > .navbar {
-  background-color: #ffffff;
+  background-color: #ff6c00;
 }
 .skin-black .main-header > .navbar .nav > li > a {
   color: #333333;
+  font-weight: bolder;
 }
 .skin-black .main-header > .navbar .nav > li > a:hover,
 .skin-black .main-header > .navbar .nav > li > a:active,
@@ -27,47 +28,47 @@
 .skin-black .main-header > .navbar .nav .open > a:hover,
 .skin-black .main-header > .navbar .nav .open > a:focus,
 .skin-black .main-header > .navbar .nav > .active > a {
-  background: #ffffff;
-  color: #999999;
+  background: #FF6C00;
+  color: #ffffff;
 }
-.skin-black .main-header > .navbar .sidebar-toggle {
-  color: #333333;
-}
+/*.skin-black .main-header > .navbar .sidebar-toggle {
+  color: #FF6C00;
+}*/
 .skin-black .main-header > .navbar .sidebar-toggle:hover {
-  color: #999999;
-  background: #ffffff;
+  color: #ffffff;
+  background: #FF6C00;
 }
 .skin-black .main-header > .navbar > .sidebar-toggle {
   color: #333;
-  border-right: 1px solid #eee;
+  border-right: 1px solid #FF6C00;
 }
 .skin-black .main-header > .navbar .navbar-nav > li > a {
   border-right: 1px solid #eee;
 }
 .skin-black .main-header > .navbar .navbar-custom-menu .navbar-nav > li > a,
 .skin-black .main-header > .navbar .navbar-right > li > a {
-  border-left: 1px solid #eee;
+  border-left: 1px solid #FF6C00;
   border-right-width: 0;
 }
 .skin-black .main-header > .logo {
-  background-color: #ffffff;
+  background-color: #ff6c00;
   color: #333333;
   border-bottom: 0 solid transparent;
   border-right: 1px solid #eee;
 }
-.skin-black .main-header > .logo:hover {
-  background-color: #fcfcfc;
-}
+/*.skin-black .main-header > .logo:hover {
+  background-color: #ff6c00;
+}*/
 @media (max-width: 767px) {
   .skin-black .main-header > .logo {
     background-color: #222222;
-    color: #ffffff;
+    color: #FF6C00;
     border-bottom: 0 solid transparent;
     border-right: none;
   }
-  .skin-black .main-header > .logo:hover {
-    background-color: #1f1f1f;
-  }
+/*  .skin-black .main-header > .logo:hover {
+    background-color: #FF6C00;
+  }*/
 }
 .skin-black .main-header li.user-header {
   background-color: #222;
@@ -96,7 +97,7 @@
 .skin-black .sidebar-menu > li.active > a {
   color: #ffffff;
   background: #1e282c;
-  border-left-color: #ffffff;
+  border-left-color: #FF6C00;
 }
 .skin-black .sidebar-menu > li > .treeview-menu {
   margin: 0 1px;

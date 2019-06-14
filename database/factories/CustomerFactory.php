@@ -10,7 +10,7 @@ $factory->define(Customer::class, function (Faker $faker) {
     return [
         'ci' => null,
         'birthdate' => $faker->date(),
-        'gender' => $faker->randomElement(['male', 'feminine']),
+        'gender' => $faker->randomElement(['Masculino', 'Femenino']),
         'medical_observations' => $faker->sentence,
         'level_id' => function () {
             return factory(Level::class)->create()->id;
